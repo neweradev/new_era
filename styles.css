@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.hero-bg{
+    background-color: #fdf6e3;
+    background-size: cover;
+    color: #002b36 ;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.other-bg{
+    background-color: #fdf6e3;
+    background-size: cover;
+    color: #002b36 ;
+    padding-bottom: 4em;
+}
+
+.pdf-bg {
+    text-align:center;
+    width:100%;
+    background-color: #fdf6e3;
+    background-size: cover;
+    color: #002b36 ;
+}
+
+header {
+    padding: 1em 0;
+}
+
+section {
+margin: 0 1em;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-bg p {
+    margin: 0 0 1em;
+}
+
+.welcome{
+    margin: 0;
+    text-align: center;
+    background-color: #073642; /* yellow #eba704 green #00963c*/
+    color: #fdf6e3;
+}
+
+.welcome h2{
+    padding-top: 1em;
+}
+
+.welcome p{
+    font-weight: normal;
+    line-height: 2em;
+}
+
+h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.upcoming {
+    margin: 0;
+    text-align: center;
+    background-color: #fdf6e3; /* yellow #eba704 green #00963c*/
+    color: #073642;
+}
+
+.upcoming h2 {
+    padding-top: 2em;
+}
+
+.upcoming a {
+color: #073642;
+text-decoration: none;
+font-size: 1.15rem;
+}
+
+
+.contact {
+    padding-top: 2em;
+    margin: 0;
+    text-align: center;
+    background-color: #073642; /* yellow #eba704 green #00963c*/
+    background-size:cover;
+    color: #fdf6e3;
+}
+
+/*.contact h3
+{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 0 1em;
+}*/
+
+.social-media {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.fab {
+    padding: .2em;
+    font-size: 2rem;
+    width: 1.45em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+.fab:hover {
+      opacity: 0.7;
+  }
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+.fa-instagram {
+    background: #DD2A7B;
+    color: white;
+  }
+
+
+/*---Media Queries --*/
+
+@media (min-width: 730px) {
+
+section {
+    margin: 0 4em;
+}
+
+.fab {
+    padding: .2em;
+    font-size: 1.5rem;
+    width: 1.45em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+
+}
+@media (min-width: 930px){
+    .hero-bg {
+        text-align: left;
+    }
+
+    .hero-bg p {
+        margin: 0 0 3em;
+    }
+
+    .hero-bg section {
+        width: 65%;
+    }
+
+    .hero-bg {
+        margin-bottom: 0;
+    }
+
+    section.welcome {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "images content"; /* setting the order of the columns */
+    }
+    .right-col {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+
+    .carouselFights {
+        grid-area: images;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    section.upcoming {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "images content"; /* setting the order of the columns */
+    }
+    .right-col {
+        grid-area: content;
+        padding: 0 10%;
+        text-align: left;
+        align-self: center;
+    }
+
+    .contact {
+        padding-top: 2em;
+        margin: 0;
+        background-color: #073642; /* yellow #eba704 green #00963c*/
+        background-size:cover;
+        color: #fdf6e3;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+
+}
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+transition: -webkit-transform 0.5s ease;
+transition: transform 0.5s ease;
+transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+-webkit-backface-visibility: visible;
+backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
