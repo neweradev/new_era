@@ -29,6 +29,15 @@ body {
     color: #002b36 ;
 }
 
+.dupa-bg {
+    text-align:left;
+    background-color: #fdf6e3;
+    background-size: cover;
+    color: #002b36;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
 header {
     padding: 1em 0;
 }
@@ -102,15 +111,6 @@ font-size: 1.15rem;
     color: #fdf6e3;
 }
 
-/*.contact h3
-{
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    position: relative;
-    z-index: 1;
-    margin: 0 0 1em;
-}*/
-
 .social-media {
     text-align: center;
     padding-top: 1em;
@@ -164,6 +164,11 @@ section {
     border-radius: 50%;
   }
 
+    .dupa-bg {
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
 
 }
 @media (min-width: 930px){
@@ -183,7 +188,13 @@ section {
         margin-bottom: 0;
     }
 
+    .dupa-bg {
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
     section.welcome {
+        text-align: justify;
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-areas: "images content"; /* setting the order of the columns */
